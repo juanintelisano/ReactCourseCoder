@@ -1,0 +1,10 @@
+PROPS = son las propiedades que le pasas a un componente. Puede ser cualquier cosa
+Ej: document.AddEvebtListener (parametro). No hay limite.
+La ejecucion de la  funcion va a ser del tipo:
+    <Foo parametro="1"/>
+
+    -Si el parametro que le paso es un string, se pasa como en html
+    -si es cualquer otra cosa, no van las comilasy van llaves ej <Nav inheader = {true} />
+
+    1:19 paso + componentes
+    EJ:     <Nav inHeader ="bienvenido" edad={31} usuraios={["juan", "horacio", "carlos"]} persona={{nombre: "juan"}}/> 

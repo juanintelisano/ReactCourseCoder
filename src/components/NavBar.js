@@ -1,11 +1,17 @@
 const Nav = () => {
+        
+
     return (
             <nav>
-                <h3>Desafio</h3>
+                <h3>Desafio 03</h3>
                 <div className="links">
-                    <a href="#" class="link1">Home</a>
-                    <a href="#" class="link1">Location</a>
-                    <a href="#" class="link1">Contact</a>
+                    <a href="#" className="link1">Home</a>
+                    <a href="#" className="link1">Location</a>
+                    <a href="#" className="link1">Contact</a>
+                    <span className="material-symbols-outlined">
+shopping_cart
+</span>
+
                 </div>
             </nav>
     )

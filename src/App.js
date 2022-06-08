@@ -2,16 +2,17 @@
 import './estilos.css';
 
 import Nav from './components/NavBar'
+import ItemListContainer from './components/ItemListContainer'
 
 const App = () => {
   return(
-    <>
-    <Nav/>
-      <main>
-        <h2></h2>
-      </main>
+    <>  
+    <Nav /> 
+    <ItemListContainer greeting = "List" />
+
     </>
   ) 
 }
+
 
 export default App
