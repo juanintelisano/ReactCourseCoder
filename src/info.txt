@@ -8,3 +8,35 @@ La ejecucion de la  funcion va a ser del tipo:
 
     1:19 paso + componentes
     EJ:     <Nav inHeader ="bienvenido" edad={31} usuraios={["juan", "horacio", "carlos"]} persona={{nombre: "juan"}}/> 
+
+
+    ---
+
+    Class vs. Funcionales:
+    Hook que necesitamos: useState. Siempre da un ARRAY!
+    EJ:
+    1- Pimero va la funcion  (const resultado = useState(0))
+    2- Despues el estado (const contador = resultado [0])
+    3- y despues la funcion con la que queres cambiar el estado   (const canbiarContador = resultado [1])
+
+La unica manera de cambiar el estado es con la funcion principal por ej: cambiarContador (contador + 1) -aumenta e manera incremental de a uno-
+
+LAS FUNCIONES QUE CAMBIAN SIEMPRE ARRANCAN CON SET..
+  
+
+PRIMERO:
+
+poner evento (por ejemplo click) al boton: <button onClick = { **}> aumentar</button>
+
+SEGUNDO:
+Creo una función para contar y la pongo adentro del OnClick( ** )
+
+TERCERO:
+Dentro de la funcion anterior, creo función SETXXXX para aumentaR
+
+Stock, tiene que ser un item de tipo numerico ej. stock {5}
+Initial: es el valor inicial del estado
+
+ejemplo de props del ejercicio:
+const initial =1 ------> useState(initial)
+onAdd es funcion. Tiene q valer una funcion. Puede ser vacia tipo: <main onADD={()=>{}}/>
