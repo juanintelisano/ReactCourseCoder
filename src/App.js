@@ -1,19 +1,17 @@
 
 import './estilos.css'
-import Nav from './components/NavBar'
-import ItemListContainer from './components/ItemListContainer'
-import ItemCount from './components/ItemCount'
+import Nav from './components/NavBar.js'
+import ItemListContainer from './components/ItemListContainer.js'
+import ItemCount from './components/ItemCount.js'
 
 
 
 const App = () => {
 
-  
   return(
     <>  
-    <Nav /> 
+    <Nav/> 
     <ItemListContainer greeting = "List" />
-    <ItemCount/>
     
     </>
   ) 

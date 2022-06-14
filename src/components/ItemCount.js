@@ -6,27 +6,37 @@ const [contador, setContador] = useState(initial)
 
 
 const aumentarContador = () => {
-    setContador(contador + 1)
+    
     console.log(contador)
-}
-
-const disminuirContador =() => {
-    setContador(contador - 1)
-    if(contador>0) { 
-        setContador(contador - 1)
+    if (contador < 5){
+        setContador(contador + 1)
     } else {
-
+        alert('no hay mas stok')
     }
 }
 
-const confirmar = () => {}
+const disminuirContador =() => {
+
+    console.log(contador)
+    if(contador>0) { 
+        setContador(contador - 1)
+    } else {
+        
+    }
+}
+
+
+
+const confirmar = () => {
+    alert ('comprando' +  contador  +  'articulos')
+}
 
     return (
     <div>
-    <p> El contador va: {contador}</p>
+    <p> Cantidad de articulos seleccionados: {contador}</p>
     <button onClick = {aumentarContador}> aumentar</button>
     <button onClick = {disminuirContador}> disminuir</button>
-    <button>{confirmar}</button>
+    <button onClick = {confirmar}>confirmar</button>
     </div>
 )
 }
