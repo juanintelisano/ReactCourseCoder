@@ -10,8 +10,8 @@ La ejecucion de la  funcion va a ser del tipo:
     EJ:     <Nav inHeader ="bienvenido" edad={31} usuraios={["juan", "horacio", "carlos"]} persona={{nombre: "juan"}}/> 
 
 
-    ---
 
+    ---------------------------------------------------
     Class vs. Funcionales:
     Hook que necesitamos: useState. Siempre da un ARRAY!
     EJ:
@@ -25,7 +25,6 @@ LAS FUNCIONES QUE CAMBIAN SIEMPRE ARRANCAN CON SET..
   
 
 PRIMERO:
-
 poner evento (por ejemplo click) al boton: <button onClick = { **}> aumentar</button>
 
 SEGUNDO:
@@ -35,8 +34,65 @@ TERCERO:
 Dentro de la funcion anterior, creo función SETXXXX para aumentaR
 
 Stock, tiene que ser un item de tipo numerico ej. stock {5}
-Initial: es el valor inicial del estado
-
-ejemplo de props del ejercicio:
+Initial: es el valor inicial del estado  
+<> Ejemplo de props del ejercicio:
 const initial =1 ------> useState(initial)
-onAdd es funcion. Tiene q valer una funcion. Puede ser vacia tipo: <main onADD={()=>{}}/>
+onAdd es funcion. Tiene q valer una funcion. Puede ser vacia tipo: <main onADD = {() => {}} />
+
+
+-------------------------------------------------------
+useEffect: permite renderizar los componentes. Se ejecuta la función, termina en el retorno y podemos verlo en pantalla.
+
+Ciclo de vida:
+const Usuarios = () => {
+    const cargando = useState(true)
+
+(5) useEffect(() => 
+    // ya consegui los usuarios!
+)
+
+    if (cargando){
+        return (
+            <ul>
+            cargando...
+            </ul>
+        )
+    } else {
+        return(
+            usuarios...
+        )
+    }
+}
+
+1er ciclo de vida:
+1- carga usuarios
+2- carga el estado por primera vez
+3- se evalua la primera condicional
+4- se muestra cargando... (renderizado)
+5- se activa el efecto
+6- modifico el estado adentro el efecto para que arranque el segundo ciclo de vida
+
+2do ciclo de vida:
+1- carga usuarios
+2- se cambia el valor a false del estado
+3- se evalua por primera vez el condicional de nuevo, ahora el estado es false
+4- 
+
+
+useEffect(a,b) -> el parametro a va siempre y el b es opcional (funcion, [array])
+   //veo cada hola por cada ciclo de vida
+  IMPLEMENTAR UN PATRON CONTAINER PARA EL useEffect
+  Container -> preentacional
+  presentacional presenta. puede tener alguna logica pero mas que eso no
+  CONTAINER, BUSCA obtener los componentes del presentacional. Hay estados, logicas, y efectos. Todo lo de container se pasa por props al presentacional. Y ese la usa para hacer efectos. Puede haber mas componentes en el medio:
+    CONTAINER -> PRESENTACIONAL 1 - > PRESENTACIONAL 2
+    C -> catalogo de la app
+    p1 ->  ara pasarle el array del producto por props. este va mapeando. por cada vuelta que de miestra un p2 (reparte las cartas)
+    p2 -> cada tarjeta de los productos
+
+
+    setTimeout (funcion, numeros)
+    numeros = segundos que quiero esperar para ejecutar la fx
+
+    
+Promises

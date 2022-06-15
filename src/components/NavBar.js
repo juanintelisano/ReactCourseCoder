@@ -3,7 +3,7 @@ const Nav = () => {
 
     return (
             <nav>
-                <h3>Desafio "contador"</h3>
+                <h3>Embriones de caballos</h3>
                 <div className="links">
                     <a href="#" className="link1">Home</a>
                     <a href="#" className="link1">Location</a>

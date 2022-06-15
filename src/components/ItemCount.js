@@ -1,8 +1,11 @@
 import {useState} from "react"
 
-const ItemCount = ({stock, initial, onAdd}) => {
+
+const ItemCount = ({stock, initial}) => {
 
 const [contador, setContador] = useState(initial)
+
+
 
 
 const aumentarContador = () => {
@@ -11,7 +14,7 @@ const aumentarContador = () => {
     if (contador < 5){
         setContador(contador + 1)
     } else {
-        alert('no hay mas stok')
+        alert('no hay mas stock')
     }
 }
 
@@ -25,8 +28,6 @@ const disminuirContador =() => {
     }
 }
 
-
-
 const confirmar = () => {
     alert ('comprando' +  contador  +  'articulos')
 }
@@ -36,9 +37,10 @@ const confirmar = () => {
     <p> Cantidad de articulos seleccionados: {contador}</p>
     <button onClick = {aumentarContador}> aumentar</button>
     <button onClick = {disminuirContador}> disminuir</button>
-    <button onClick = {confirmar}>confirmar</button>
+   
     </div>
 )
 }
 
 export default ItemCount
+ 
