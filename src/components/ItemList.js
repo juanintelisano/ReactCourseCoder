@@ -9,13 +9,11 @@ function ItemList({products}) {
         products.map (p =>
             <Item id={p.id} 
             title={p.title} 
-            img={p.tic} 
+            imgURL={p.imgURL} 
+            tic={p.tic}
             price={p.price} 
             stock={p.stock} />
-
             )
-
-
   )
 }
 

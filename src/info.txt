@@ -95,4 +95,76 @@ useEffect(a,b) -> el parametro a va siempre y el b es opcional (funcion, [array]
     numeros = segundos que quiero esperar para ejecutar la fx
 
     
-Promises
+
+-------------------------------------------------------------------------
+Que hace el fetch? hace una peticion. trae datos de algu lado. le das una direccion(url/ip).
+Protocolos de comunicación
+HTTP/S:
+TCP/IP:
+FTP:
+POP/IMAO/SMTP:
+SSH:
+
+
+--Requisito(cliente)
+URL/IP - METODO(get-post-delete-put) - VERSION - HEADERS - BODY
+Para que fetch funcione solamente hay q pasarle una url
+
+content-type: application/json
+content-length
+body: nombres
+
+-->
+
+--Response(servidor)
+te manda su: version- codigo- mensaje
+headers - body 
+
+CODIGOS: 2XX=OK (EL 200 ES EL MEJOR); 4XX=ERRPR; 1xx=INFORMACION; 3XX=REDIRECCIONES, 5XX=ERRORES DEL servidor
+
+
+ej:
+fetch ("http://wwww...........")
+.then((respuesta) =>{
+    console.log('termino el pedido')
+})
+.cartch((error) => {
+    console.log("hubo un error")
+})
+DEVUELVE:
+>> Promise { pending }
+Termino el pedido
+ (then si termino bien, y catch si termino mal)
+error puede ser que hayas puesto url mal o se haya cotado internet. si el servidor te puede responder de cualqueir forma entonces sse va a implementar un fetch.
+
+
+
+1- hago el pedido con Fetch: Como va atardar me da una promesa, pror eso el . then.catch
+Fetch ("https://www..........")
+
+.then((respuesta) =>{
+
+    2- obtenemos y validamos la rta del servidor
+    	//respuesta.json()/arrayBuffer(/text(/blob()))
+
+    3- transformo la rta en formato que yo queria
+    console.log("termino el pedido)
+    console.log("respuesta.json())
+
+    4-
+    const p = respuesta.json()
+    return p
+    })
+
+.then((productos) => {
+    console.log(productos)
+})
+.catch((error) =>{
+    console.log('hubo un errro")
+})
+
+
+
+
+
+Stack: el lugar donde se ejecutan las funciones de js. Se ejecuta una por tiempo. El fetch, en el momento que sabe que la funcion va a tardar, las manda a ejecutarse a otro lugar (pending) asi se te libera el stack

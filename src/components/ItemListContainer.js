@@ -24,26 +24,6 @@ return(
     </div>
 )
 
-/*const onAdd = () => {}
-
-if(items.length > 0) {
-    return (
-        <div>
-        <main className="ILC">  
-        <h3>{props.greeting}</h3>
-        <ItemCount stock={5} onAdd={onAdd} initial={1} />
-        </main>  
-        </div>
-    )
-    } else {
-    <div>
-    <main className="ILC">  
-    <h3>{props.greeting}</h3>
-    <p> cargando </p>
-    </main>  
-    </div>
-}*/
-
 
 
 
