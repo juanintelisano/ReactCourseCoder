@@ -2,40 +2,33 @@
 import {useEffect} from 'react'
 import {useState} from "react"
 import Productos from './Productos.js'
-import MockAsync from './MockAsync.js'
 import ItemDetail from './ItemDetail.js'
+import {getProduct} from './Productos.js'
 
 
 
 
-const ItemDetailContainer = (PPP) => {
+const ItemDetailContainer = () => {
+    const [product, setproduct] = useState ({})
 
-
-const [item2, setItems] = useState ([])
 useEffect(() => {
-
-    fetch ("./components/Productos.js")
-.then((respuesta) =>{
-
-    console.log(respuesta)
-    console.log('loaded')
-}, 4000)
-.catch((error) =>{
-    console.log( "hubo un error")
-}, 4000)
-
+   getProduct()
+        .then((res) =>{  
+            setproduct(res) 
+        })
+        .catch((error) =>{
+        console.log(error)
+        })
+    },) 
+console.log(product)
 
 
-    MockAsync (2500, Productos)
-    .then(rdo => setItems(rdo))
-}, [item2])
+//returning
 return(
     <div> 
-        <ItemDetail />
+        <ItemDetail product={product} />
     </div>
 )
-
-
 
 }
 
