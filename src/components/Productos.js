@@ -1,12 +1,13 @@
 import {product01} from './ItemDetailContainer'
 
 
+
 const Productos = [
     {
       "price": 7000,
       "id": 1,
       "title": "Argentine Criollo",
-      "imgURL": "./public/image/Argentine Criollo.jpg",
+      "imgURL": <img src ="./public/image/Argentine Criollo.jpg"/>,
       "tic": "./public/image/argFLAG.png",
       "stock": "5"
     },
