@@ -6,7 +6,7 @@ import ItemCount from './ItemCount.js'
 
 
 
-const ItemDetail = ({product}) =>  {
+const ItemDetail = ({product01}) =>  {
     return(
         <div className='CaballoC' key="1">
             <h1> Caballo Criollo </h1>

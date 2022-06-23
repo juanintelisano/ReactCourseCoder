@@ -6,11 +6,18 @@ import ItemDetail from './ItemDetail.js'
 import {getProduct} from './Productos.js'
 
 
+//printing horses
+export const product01 = () => {
+Productos.forEach(object => {
+    if (object.id === 1 ){
+      console.log("horse:", object)
+    }
+  })
+}
 
-
+//main const
 const ItemDetailContainer = () => {
-    const [product, setproduct] = useState ({})
-
+    const [product01, setproduct] = useState ({})
 useEffect(() => {
    getProduct()
         .then((res) =>{  
@@ -20,13 +27,12 @@ useEffect(() => {
         console.log(error)
         })
     },) 
-console.log(product)
-
+console.log(product01)
 
 //returning
 return(
     <div> 
-        <ItemDetail product={product} />
+        <ItemDetail Product01={product01} />
     </div>
 )
 

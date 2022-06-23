@@ -1,3 +1,6 @@
+import {product01} from './ItemDetailContainer'
+
+
 const Productos = [
     {
       "price": 7000,
@@ -122,21 +125,15 @@ const Productos = [
 
   ]
 
-  export const product ={
-    "price": 7000,
-      "id": 1,
-      "title": "Argentine Criollo",
-      "imgURL": "./public/image/Argentine Criollo.jpg",
-      "tic": "./public/image/argFLAG.png",
-      "stock": "5"
-  }
-
 //Getting product    
 export const getProduct = () => {
   return new Promise ((resolve, reject) => {
       setTimeout(() => {
-          resolve(product)
+          resolve(product01)
           },2000)
   })
 }
+
+
+
   export default Productos;
