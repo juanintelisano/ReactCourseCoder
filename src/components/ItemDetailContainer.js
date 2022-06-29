@@ -3,23 +3,26 @@ import {useEffect} from 'react'
 import {useState} from "react"
 import Productos from './Productos.js'
 import ItemDetail from './ItemDetail.js'
-import {getProduct} from './Productos.js'
-
+import {getProductById} from './Productos.js'
+import { useParams } from 'react-router-dom'
 
 //printing horses
-export const product01 = () => {
+/*export const product = () => {
 Productos.forEach(object => {
     if (object.id === 1 ){
       console.log("horse:", object)
     }
   })
-}
+}*/
 
 //main const
 const ItemDetailContainer = () => {
-    const [product01, setproduct] = useState ({})
+    const [product, setproduct] = useState ({})
+    const {id} = useParams()
+    console.log(parseInt(id) )
+
 useEffect(() => {
-   getProduct()
+   getProductById(id) //id que le pase en el params
         .then((res) =>{  
             setproduct(res) 
         })
@@ -27,12 +30,12 @@ useEffect(() => {
         console.log(error)
         })
     },) 
-console.log(product01)
+console.log(product)
 
 //returning
 return(
     <div> 
-        <ItemDetail Product01={product01} />
+        <ItemDetail {...product} />
     </div>
 )
 

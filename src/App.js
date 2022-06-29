@@ -1,9 +1,8 @@
-
 import './estilos.css'
 import Nav from './components/NavBar.js'
-import ItemListContainer from './components/ItemListContainer.js'
-import ItemCount from './components/ItemCount.js'
-import ItemDetailContainer from './components/ItemDetailContainer'
+import {BrowserRouter} from "react-router-dom"
+import Main from "./components/Main.js"
+
 
 
 
@@ -12,12 +11,12 @@ const App = () => {
 
 
   return(
-    <>  
-    <Nav/> 
-    <ItemListContainer greeting = "List" />
-    <br></br>
-    <ItemDetailContainer/>
-    </>
+    <BrowserRouter>
+
+          <Nav/> 
+          <Main/>
+
+    </BrowserRouter>
   ) 
 }
 

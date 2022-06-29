@@ -168,3 +168,10 @@ Fetch ("https://www..........")
 
 
 Stack: el lugar donde se ejecutan las funciones de js. Se ejecuta una por tiempo. El fetch, en el momento que sabe que la funcion va a tardar, las manda a ejecutarse a otro lugar (pending) asi se te libera el stack
+
+-----------------
+Routes..
+Librería: ract.
+
+CADA VEZ QUE HACEMOS CLICK EN ALGUN LUGAR DE LA PAGINA Y CAMBIA ALGO, SE VUELVE A EJECUTAR UNA Route
+path => "a que url tiene que coincidir la ruta"
