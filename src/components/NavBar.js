@@ -9,12 +9,11 @@ const Nav = ({inHeader, navcl}) => {
                 <h3></h3>
                 <div className="links">
                     <NavLink to="/categoria/Home">{inHeader?"Home": "Home"}</NavLink>
-                    <NavLink to="/categoria/Shopp">{inHeader?"Home": "Shopp"}</NavLink>
-                    <NavLink to="/categoria/Contact">{inHeader?"Home": "Contact"}</NavLink>
-                    <NavLink to="/category/base">{inHeader?"Home": "base"}</NavLink>
-                    <NavLink to="/category/medium">{inHeader?"Home": "medium"}</NavLink>
-                    <NavLink to="/category/premium">{inHeader?"Home": "premium"}</NavLink>
-
+                    <NavLink to="/categoria/Shopp">{inHeader?"Shopp": "Shopp"}</NavLink>
+                    <NavLink to="/categoria/Contact">{inHeader?"Contact": "Contact"}</NavLink>
+                    <NavLink to="/categoria/base">{inHeader?"base": "base"}</NavLink>
+                    <NavLink to="/categoria/medium">{inHeader?"medium": "medium"}</NavLink>
+                    <NavLink to="/categoria/premium">{inHeader?"premium": "premium"}</NavLink>
                     <span className="material-symbols-outlined">shopping_cart
                 </span>
                 </div>

@@ -13,7 +13,9 @@ function ItemList({products}) {
             imgURL={p.imgURL} 
             tic={p.tic}
             price={p.price} 
-            stock={p.stock} />
+            stock={p.stock}
+            categoryId={p.categoryId} 
+            description={p.description}/>
             )
   )
 }

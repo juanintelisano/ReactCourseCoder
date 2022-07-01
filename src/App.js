@@ -12,10 +12,8 @@ const App = () => {
 
   return(
     <BrowserRouter>
-
           <Nav/> 
           <Main/>
-
     </BrowserRouter>
   ) 
 }

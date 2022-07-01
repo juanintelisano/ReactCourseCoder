@@ -8,13 +8,15 @@ import {Link} from "react-router-dom"
 function Item ({id, title, tic, price, imgURL}) {
     return(
         <div key={id}>
-            <h1> {title} </h1>
-            <img src={imgURL} alt={title} />
+            <h1 className='title'> {title} </h1>
+            <img src={imgURL} alt={title} className="imgURL"/>
             <br></br>
-            <img src={tic}/>
-            <h2> {price} </h2>
-            <Link to ={`/detail/${id}`}>Detail</Link>
-            <ItemCount stock={5}  initial={1} />
+            <img src={tic} className="tic" />
+            <h2 className="price"> ${price} </h2>
+            <div className= "detail">
+                <Link to ={`/detail/${id}`}>Detail</Link>
+            </div>
+  
         </div>
     )
 }

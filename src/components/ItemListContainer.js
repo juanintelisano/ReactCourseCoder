@@ -17,13 +17,13 @@ const {categoryId} = useParams
 
 
 useEffect(() => {
-    if(categoryId){
+    if(!categoryId){
     MockAsync (2000, Productos)
-    .then(rdo => setItems(rdo)) } else{}
+    .then(rdo => setItems(rdo)) } else{ alert ("error")}
 }, [items])
 return(
     <div> 
-        <ItemList products={items} />
+        { items?.length < 0 ? <p>EMPTY, please reload...</p>: <ItemList products={items} /> }
     </div>
 )
 

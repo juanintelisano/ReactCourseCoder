@@ -19,13 +19,16 @@ Productos.forEach(object => {
 const ItemDetailContainer = () => {
     const [product, setproduct] = useState ({})
     const {id} = useParams()
-    console.log(parseInt(id) )
+
+
+
+   // console.log(parseInt(id) )
 
 useEffect(() => {
-   getProductById(id) //id que le pase en el params
+   getProductById(parseInt(id)) //id que le pase en el params
         .then((res) =>{  
             setproduct(res) 
-        })
+        }, [])
         .catch((error) =>{
         console.log(error)
         })
@@ -35,7 +38,7 @@ console.log(product)
 //returning
 return(
     <div> 
-        <ItemDetail {...product} />
+        { product?.length < 0 ? <p>EMPTY, please reload...</p>:<ItemDetail {...product} />}
     </div>
 )
 

@@ -7,13 +7,11 @@ const Main = () => {
 
   return (
     <main>
-        <h2>Home</h2>
+        <h2></h2>
         <Routes>
           <Route path="/"element ={<ItemListContainer/>} />
-          <Route path="/categoria/:id"element ={<ItemListContainer/>} />
           <Route path="/detail/:id"element ={<ItemDetailContainer/>} />
-          <Route path="/category/:categoryId"element ={<ItemDetailContainer/>} />
-
+          <Route path="/categoria/:categoryId"element ={<ItemListContainer/>} />
         </Routes>
     </main>
   )

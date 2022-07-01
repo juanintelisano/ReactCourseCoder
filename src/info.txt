@@ -175,3 +175,8 @@ Librería: ract.
 
 CADA VEZ QUE HACEMOS CLICK EN ALGUN LUGAR DE LA PAGINA Y CAMBIA ALGO, SE VUELVE A EJECUTAR UNA Route
 path => "a que url tiene que coincidir la ruta"
+
+
+<NavLink to="/category/base">{inHeader?"base": "base"}</NavLink>
+                    <NavLink to="/category/medium">{inHeader?"medium": "medium"}</NavLink>
+                    <NavLink to="/category/premium">{inHeader?"premium": "premium"}</NavLink>
