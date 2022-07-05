@@ -14,7 +14,7 @@ const Productos = [
       "price": 9000,
       "id": 2,
       "title": "Anglo-Arabian",
-      "imgURL": "./public/image/arab.png",
+      "imgURL": "https://upload.wikimedia.org/wikipedia/commons/2/23/Arabe-barbe_alezan%2C_Tozeur.jpg",
       "tic": "./public/image/arab.png",
       "stock": "5",
       "categoryId": "medium",
@@ -24,7 +24,7 @@ const Productos = [
       "price": 7500,
       "id": 3,
       "title": "Blazer horse",
-      "imgURL": "./public/image/blazer.jpg",
+      "imgURL": "https://i.pinimg.com/originals/cd/e6/22/cde622865565b6575b6b4b1fffa2c8c2.jpg",
       "tic": "./public/image/usaFlag.png",
       "stock": "5",
       "categoryId": "medium",
@@ -35,25 +35,15 @@ const Productos = [
       "price": 10000,
       "id": 4,
       "title": "Corsican horse",
-      "imgURL": "./public/image/Corsican horse.jpg",
+      "imgURL": "https://pbs.twimg.com/media/DgLW-smVQAAPABq?format=jpg&name=large",
       "tic": "./public/image/FRFlag.png",
       "stock": "5",
       "categoryId": "medium",
       "description":"El caballo Corsican, posee uan altura que ronda los 130 y 152 cm, tiene un pelaje negro pangaré castaño en todas sus matices. Utilizado en centros ecuestres, el Caballo corso ofrece una caballería de remonta, muy versátil, resistente y frugal. Su velocidad, fuerza y ​​carácter permiten que sea muy competente en el deporte para las carreras de endurance. Compacto, fácil de manejar, combina vivacidad y frialdad, el caballo corso es adecuado para la separación de ganado y la monta western. Adaptado a su territorio, el caballo corso de paso seguro y ágil sobresale en la práctica del senderismo.El caballo corso es un caballo para montar muy adaptado para moverse por los caminos más peligrosos de Córcega. También fue un excelente y reconocido caballo de enganche."
     },
     {
-      "price": 10000,
-      "id": 5,
-      "title": "East Bulgarian",
-      "imgURL": "./public/image/East Bulgarian.jpg",
-      "tic": "./public/image/BulgariaFlag.png",
-      "stock": "5",
-      "categoryId": "medium",
-      "description": "Su altura es de hasta 165 cm, cabeza de tamaño mediano, fina y con perfil recto. Ojos grandes y animados. Cuello musculado, largo y recto. Cruz prominente. Hombros fuertes. Pecho amplio y pleno. Dorso recto y largo. Grupa ligeramente inclinada.Patas musculadas y bien hechas. Cascos duros y bien formados. Capas principales: alazán, castaño y negro. Increíblemente resistentes, versátiles y atléticos. Estos caballos se utilizan principalmente para montar y para el trabajo de tiro y también son habituales en varias competiciones de deportes ecuestres incluyendo doma y salto de obstáculos. Su carácter es de temperamento amable y tranquilo pero enérgico."
-    },
-    {
       "price": 15000,
-      "id": 6,
+      "id": 5,
       "title": "Haflinger",
       "imgURL": "./public/image/Haflinger.jpg",
       "tic": "./public/image/AustriaFLAG.png",
@@ -63,7 +53,7 @@ const Productos = [
     },
     {
         "price": 5000,
-        "id": 7,
+        "id": 6,
         "title": "Karabakh horse",
         "imgURL": "./public/image/Karabakh.jpg",
         "tic": "./public/image/ArmenianFlag.png",
@@ -73,7 +63,7 @@ const Productos = [
       },
       {
         "price": 8000,
-        "id": 8,
+        "id": 7,
         "title": "Malopolski",
         "imgURL": "./public/image/Karabakh.jpg",
         "tic": "./public/image/polska.png",
@@ -83,7 +73,7 @@ const Productos = [
       },
       {
         "price": 17000,
-        "id": 9,
+        "id": 8,
         "title": "North Swedish Horse",
         "imgURL": "./public/image/North Swedish Horse.jpg",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         "tic": "./public/image/sweden.png",
@@ -92,18 +82,8 @@ const Productos = [
         "description": "Tiene una cabeza bastante grande, con un cuello corto y grueso, el cuerpo es largo y amplio y la grupa y los posteriores descendentes están vien musculados y redondeados. Sus extremidades son fuertes, y la crin y la cola son tupidas. Es Castaño, castaño oscuro y bayo. La capa de color bayo es típica de los ejemplares que han tenido ponis entre sus antepasados. Su altura se encuentra entre 1,55 y 1,60 metros."
       },
       {
-        "price": 15500,
-        "id": 10,
-        "title": "Pottok",
-        "imgURL": "./public/image/Pottok.jpg",
-        "tic": "./public/image/spain.png",
-        "stock": "5",
-        "categoryId": "premium",
-        "description": "Rodean los 115 y 132 cm de alzada. De color castaño, negro, alazán, así como todas las variedades de pinto compuestas de uno o varios colores mencionados anteriormente. Poni muy rústico, nativo de las montañas del País Vasco, dócil y generoso, apto para las disciplinas ecuestres o crianza en libertad."
-      },
-      {
         "price": 20000,
-        "id": 11,
+        "id": 9,
         "title": "Schleswig Coldblood",
         "imgURL": "./public/image/Schleswig Coldblood.jpg",
         "tic": "./public/image/denmark.png",
@@ -113,7 +93,7 @@ const Productos = [
       },
       {
         "price": 7000,
-        "id": 12,
+        "id": 10,
         "title": "Soviet Heavy Draft",
         "imgURL": "./public/image/Soviet Heavy Draft.jpg",
         "tic": "./public/image/russia.png",
@@ -122,18 +102,8 @@ const Productos = [
         "description": "La cría selectiva que creó el Draft pesado soviético dio como resultado un caballo de construcción masiva con aires de movimiento libre. Tiene un perfil recto o convexo, y un cuello corto. El torso es ancho y musculoso, con una espalda ancha y fuerte y una grupa musculosa e inclinada. El abdomen es redondeado. Las patas son cortas y robustas con articulaciones sólidas y pezuñas anchas y redondeadas."
       },
       {
-        "price": 11500,
-        "id": 13,
-        "title": "Wielkopolski",
-        "imgURL": "./public/image/Wielkopolski.jpg",
-        "tic": "./public/image/polska.png",
-        "stock": "5",
-        "categoryId": "premium",
-        "description": "El Caballo Wielkopolski es por naturaleza una raza compuesta: no difiere intrínsecamente de otros caballos de silla polacos, ya que la distinción se hizo sobre la base de la introducción del caballo oriental. Está históricamente relacionado con el Trakehner: comparado con el Malopolski, el ejemplar Wielkopolski es más parecido al tipo de caballo germánico. También es un típico mestizo. La altura media oscila entre 1,57 metros y 1,68 metros"
-      },
-      {
         "price": 12000,
-        "id": 14,
+        "id": 11,
         "title": "Zangersheide",
         "imgURL": "./public/image/Zangersheide.jpg",
         "tic": "./public/image/belgium.png",
@@ -143,7 +113,7 @@ const Productos = [
       },
       {
         "price": 19250,
-        "id": 15,
+        "id": 12,
         "title": "Zweibrücker",
         "imgURL": "./public/image/Zweibrücker.jpg",
         "tic": "./public/image/germany.png",

@@ -15,7 +15,9 @@ function ItemList({products}) {
             price={p.price} 
             stock={p.stock}
             categoryId={p.categoryId} 
-            description={p.description}/>
+            description={p.description}
+            key={p.id}/>
+           
             )
   )
 }
