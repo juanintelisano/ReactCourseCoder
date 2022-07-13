@@ -2,13 +2,14 @@
 
 import React from 'react'
 import ItemCount from './ItemCount.js'
+import { Link } from 'react-router-dom'
+import {useState} from "react"
 
 
-const OnAdd = (cantidadSeleccioanda)=>{
 
-}
 
-const ItemDetail = ({id, imgURL, tic, title, price, stock,description}) =>  {
+const ItemDetail = ({id, imgURL, tic, title, price, stock,description, initial}) =>  {
+const [cantidadSeleccioanda] = useState(initial)
     return(
         <div className='CaballoC' key="1">
             <h1 >{title} </h1>
@@ -18,10 +19,13 @@ const ItemDetail = ({id, imgURL, tic, title, price, stock,description}) =>  {
             <img src={tic} className="tic"/>
             <h2 className="price">${price}  </h2>
             <ItemCount initial={1} stock={stock} OnAdd={OnAdd}/>
-            <button>Termianr compra</button>
+            <button><Link to="/carrito">Proceder con la compra</Link></button>
         </div>
 
     )
 }
+const OnAdd = (cantidadSeleccioanda)=>{
+    console.log("desde item detail :" +  cantidadSeleccioanda)
+    }
 
 export default ItemDetail
