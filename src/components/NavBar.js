@@ -1,4 +1,5 @@
 import{ NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 const Nav = ({inHeader, navcl}) => {
@@ -14,8 +15,10 @@ const Nav = ({inHeader, navcl}) => {
                     <NavLink to="/categoria/base">{inHeader?"base": "base"}</NavLink>
                     <NavLink to="/categoria/medium">{inHeader?"medium": "medium"}</NavLink>
                     <NavLink to="/categoria/premium">{inHeader?"premium": "premium"}</NavLink>
-                    <span className="material-symbols-outlined">shopping_cart
-                </span>
+                    
+                    <span className="material-symbols-outlined"> 
+                    <Link to="/carrito">CARRITO</Link>
+                    </span>
                 </div>
             </nav>
     )

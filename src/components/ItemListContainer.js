@@ -12,7 +12,7 @@ const ItemListContainer = (props) => {
 
 
 const [items, setItems] = useState ([])
-const {categoryId} = useParams
+const {categoryId} = useParams()
 
 
 

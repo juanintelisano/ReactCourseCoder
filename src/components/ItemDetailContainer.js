@@ -6,23 +6,11 @@ import ItemDetail from './ItemDetail.js'
 import {getProductById} from './Productos.js'
 import { useParams } from 'react-router-dom'
 
-//printing horses
-/*export const product = () => {
-Productos.forEach(object => {
-    if (object.id === 1 ){
-      console.log("horse:", object)
-    }
-  })
-}*/
 
 //main const
 const ItemDetailContainer = () => {
     const [product, setproduct] = useState ({})
     const {id} = useParams()
-
-
-
-   // console.log(parseInt(id) )
 
 useEffect(() => {
    getProductById(parseInt(id)) //id que le pase en el params

@@ -51,10 +51,10 @@ main{
 }
 
 .CaballoC{
-    background-color: rgb(152, 152, 178);
+    background-color: rgb(185, 185, 214);
     color: rgb(0, 0, 0);
     font-variant: small-caps;
-    background-image: url(https://images.unsplash.com/photo-1494801819652-1ca9fe13134c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFybiUyMGRvb3J8ZW58MHx8MHx8&w=1000&q=80);
+    text-align: justify;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,7 +68,7 @@ main{
 .imgURL{
     height: 210px;
     width: 250px;
-    border: solid rgb(172, 153, 153) 2px;
+    border: solid rgb(31, 27, 27) 4px;
     border-radius: 10px;
 }
 .tic{

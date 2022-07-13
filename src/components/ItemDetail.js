@@ -4,7 +4,9 @@ import React from 'react'
 import ItemCount from './ItemCount.js'
 
 
+const OnAdd = (cantidadSeleccioanda)=>{
 
+}
 
 const ItemDetail = ({id, imgURL, tic, title, price, stock,description}) =>  {
     return(
@@ -15,7 +17,8 @@ const ItemDetail = ({id, imgURL, tic, title, price, stock,description}) =>  {
             <br></br>
             <img src={tic} className="tic"/>
             <h2 className="price">${price}  </h2>
-            <ItemCount stock={stock}/>
+            <ItemCount initial={1} stock={stock} OnAdd={OnAdd}/>
+            <button>Termianr compra</button>
         </div>
 
     )
