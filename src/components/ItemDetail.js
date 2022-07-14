@@ -9,7 +9,13 @@ import {useState} from "react"
 
 
 const ItemDetail = ({id, imgURL, tic, title, price, stock,description, initial}) =>  {
-const [cantidadSeleccioanda] = useState(initial)
+const [cantidadSeleccionada, setCantidad] = useState(initial)
+
+const OnAdd = (cantidadSeleccionada)=>{
+    console.log("desde item detail :" +  cantidadSeleccionada)
+    setCantidad(cantidadSeleccionada)
+    }
+
     return(
         <div className='CaballoC' key="1">
             <h1 >{title} </h1>
@@ -24,8 +30,6 @@ const [cantidadSeleccioanda] = useState(initial)
 
     )
 }
-const OnAdd = (cantidadSeleccioanda)=>{
-    console.log("desde item detail :" +  cantidadSeleccioanda)
-    }
+
 
 export default ItemDetail

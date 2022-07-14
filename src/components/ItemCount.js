@@ -31,12 +31,6 @@ const confirmar = (e) => {
 }
 
 
-
-
-
-
-
-
 const heandleSubmit = (e) => {
     e.preventDefault()
     console.log("validando...")
@@ -54,8 +48,6 @@ const handleKeyDown = (e) => {
             <a href="http://google.com" onClick={(e)=>{
                 e.preventDefault()
             }}>google</a>
-
-
             <form onSubmit={heandleSubmit}>
                 <input type="text" onKeyDown={handleKeyDown}/>
             </form>
